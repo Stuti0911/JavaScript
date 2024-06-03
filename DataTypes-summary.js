@@ -62,4 +62,4 @@ Static typing, on the other hand, provides better type safety at the cost of som
 
 /*stack--> Primitive, heap -->Non-primitive*/
 //example
-
+// hey
