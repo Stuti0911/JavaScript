@@ -15,6 +15,5 @@ let isLoggedin= true //bool
 // undefined : no value assigned
 // symbol: uniqueness of a tool
 
-//object
-console.log(typeof undefined);
-console.log(typeof null);
+// console.log(typeof undefined);  //undefined 
+// console.log(typeof null); //object
