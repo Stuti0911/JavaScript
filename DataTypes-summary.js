@@ -58,3 +58,8 @@ JavaScript's dynamic typing allows for more flexibility but can lead to potentia
 Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 */
 
+//--------------------------------------------------------------\
+
+/*stack--> Primitive, heap -->Non-primitive*/
+//example
+
