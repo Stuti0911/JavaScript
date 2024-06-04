@@ -1,5 +1,5 @@
-// object declare 2 ways, literal(not singleton) and constructor(singleton)
 
+// object declare 2 ways, literal(not singleton) and constructor(singleton)
 //object constructor object.create()
 //object literals
 
