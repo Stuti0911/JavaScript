@@ -4,7 +4,7 @@ var accountPassword ="1234"
 accountCity= "jaipur" // not prefered but can be initialized this way
 let accountState;  // will be undefined as we have not initialized it with anything
  
-// variable----let, var(not use): because of the scope issue ehich was resoled in "let"
+// variable----let, var(not use): because of the scope issue which was resoled in "let"
 
 //accountId=11  not allowed 
 
