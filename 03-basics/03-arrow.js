@@ -55,5 +55,7 @@ console.log(arrowFunc(4))
 const arrowFunc2=(num1,num2)=>  ({user:"stuti"} ) // returns object
 console.log(arrowFunc2(4))
 
+//but we use ()=> {} i.e. curly braces then we have to explicitly return the value
+//implicit return is only possible in case of ()=> OR ()=>()
 
 
