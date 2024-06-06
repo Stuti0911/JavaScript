@@ -2,11 +2,12 @@ let score= null
 
 //node 01-basics/03-ConversionOp.js
 
-//console.log(typeof score);
+//console.log(typeof score); //Object
 // console.log(typeof ( score)); ANOTHER WAY
-
+//score="22abc"
 let scoreInNum= Number(score);
-// console.log(typeof scoreInNum);
+console.log(scoreInNum); // i/p: "22abc" o/p:NaN
+console.log(typeof scoreInNum);
 // console.log(scoreInNum);  //22abc number m convert nahi hoga-->NaN
 
 //Converting such string into number
@@ -39,8 +40,8 @@ let str3= st1+ str
 // console.log(2+"1")
 // console.log("2"+"1")
 // console.log(2+1+1)
-// console.log("1"+2+2)
-// console.log(2+2+"1")
+// console.log("1"+2+2) // 122
+// console.log(2+2+"1") //41
 
 // yeh krna nahi chahiye 
 // console.log(true);

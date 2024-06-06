@@ -14,7 +14,7 @@ const user={
 // user.username="STU"
 // user.welcome()  // STU hello
 
-// console.log(this); // empty object
+//console.log(this); // empty object
  
 // function f(){
 //     console.log(this); // not empty

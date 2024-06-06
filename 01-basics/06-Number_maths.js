@@ -25,10 +25,9 @@ const hundered=10000000;
 // console.log(Math.max(44,4,5,2,7,2));
 
 console.log(Math.random());  // 0<=num<1
-console.log(Math.floor(Math.random()*10)+1);  // val>=1 suppose 0.03*10= floor(0.3)=0 toh if we don;t wanr 0 then +1
+console.log(Math.floor(Math.random()*10)+1);  // val>=1 suppose 0.03*10= floor(0.3)=0 toh if we don't want 0 then +1
 const max=30;
 const min=10;
-
 
 //Random number between 2 values
 console.log(Math.random() * (max-min)+min); // min<=num<max
