@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="background-color: black; color: white; font-size: 30px; padding: 60px;">
+    <ul class="lang">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addli(name){
+        const newli=document.createElement('li')
+        newli.innerHTML=`${name}` //whole travel in tree happens
+        document.querySelector('.lang').appendChild(newli)
+    }
+
+    addli("Python")
+    addli("YEahhhh")
+
+    function optimiAddLi(name){ //no whole tree is traversed in this case
+        const newli=document.createElement('li')
+        newli.appendChild(document.createTextNode(name))
+
+        document.querySelector('.lang').appendChild(newli)
+    }
+
+    optimiAddLi("TypeScript")
+
+    //Edit
+    const secLang=document.querySelector('li:nth-child(2)')
+    //secLang.innerHTML="YOPP"
+
+    // const newLi= document.createElement('li')
+    // newLi.appendChild(document.createTextNode("SP"))
+    // secLang.replaceWith(newLi) 
+
+    const newLi= document.createElement('li')
+    newLi.textContent="SP!!"
+    secLang.replaceWith(newLi) 
+
+    const firstLang= document.querySelector('li:first-child') // OR li:nth-child(1)
+    //firstLang.innerHTML="DONE"
+    firstLang.outerHTML='<li>Type</li>'
+    // const newFirstLang= document.createElement('li')
+    // newFirstLang.appendChild(document.createTextNode('TypeScript'))
+    // firstLang.replaceWith(newFirstLang)
+
+
+    //Delete
+    const lastLang= document.querySelector('li:nth-child(2)')
+    lastLang.remove()
+</script>
+</html>
