@@ -28,15 +28,38 @@
     //attachEvent()
     //jQuery - on
 
-    document.getElementById('owl').addEventListener('click', function(e){ //e:event object
-        console.log(e);
-        
-    },false) //false:default
-
-    
-    //type,timestamp,defualtPrevent,target,toElement, srcElement, cureentTarget
+     //type,timestamp,defualtPrevent,target,toElement, srcElement, cureentTarget
     //clientX, clientY, screenX, screenY
     //altkey, ctrlkey, shiftkey, keyCode
+
+    //bubbling: from inside to outside
+    // document.getElementById('owl').addEventListener('click', function(e){ //e:event object
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // },false) //false:default
+
+    // //capturing: from outside to inside
+    // document.getElementById('images').addEventListener('click', function(e){ //e:event object
+    //     console.log("images selected");
+    //     e.stopPropagation() //bubbling. capturing stop krne k liye
+    // },false) //false:default:bubbling (main event false hoga tb)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log("google click");
+    //     e.preventDefault() //Redirect allow nahi krrta
+    //     e.stopPropagation()
+    // },false)
+    
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        // const removee=e.target.parentNode
+        // removee.remove(); //issue: clicked close to li=>parent=ul ==> whole ul removed
+        //removee.parentNode.removeChild(removee);
+        if(e.target.tagName ==='IMG'){
+            const removee=e.target.parentNode
+            removee.remove(); 
+        }
+    })
 
 </script>
 </html>
