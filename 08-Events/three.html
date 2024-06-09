@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time out learning</title>
+</head>
+<body>
+    <h1>STUTIIII</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const date=function(str){
+        console.log(str,Date.now());
+    }
+    let startPrint
+    
+    document.querySelector('#start').addEventListener('click',function(){
+        startPrint=setInterval(date,1000,"3rd parameter") //3rd parameter will be printing
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(startPrint)
+    })
+    
+</script>
+</html>

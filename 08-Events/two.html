@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STUTIIII</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const functionName= function(){
+        console.log("stutiGoel");
+    }
+
+    setTimeout(function(){console.log("2sec")}, 2000) //2sec
+    setTimeout(functionName, 2000)
+
+    setInterval(() => { //after every 2sec
+        console.log("set interval");
+    }, 2000);
+    
+    const changeText= function(){
+        document.querySelector('h1').innerHTML="bestttt"
+    }
+
+    const changingTextRef=setTimeout(changeText,3000)
+
+    //clearTimeout(changingTextRef) //execute hi nahi hoga setTimeOut
+
+    document.querySelector('button').addEventListener('click', function(){
+        clearTimeout(changingTextRef)
+        console.log("stopped");
+    }) //if button clicked then timeout will not execute
+</script>
+</html>
